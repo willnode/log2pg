@@ -1,6 +1,6 @@
 import supabase from '../src/db';
 
-export default function handler( /** @type {import('@vercel/node').VercelRequest}*/ req, /** @type {import('@vercel/node').VercelResponse}*/ res) {
+export default async function handler( /** @type {import('@vercel/node').VercelRequest}*/ req, /** @type {import('@vercel/node').VercelResponse}*/ res) {
     if (req.method === 'GET') {
         res.status(200).send('Hello World!');
     } else if (req.method === 'POST') {
